@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - St. Thomas MSCC, Nalanchira</title>
+  <meta name="description" content="Explore our photo gallery showcasing church events, celebrations, and community activities at St. Thomas Malankara Syrian Catholic Church, Nalanchira.">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Custom Custom CSS -->
+  <link href="css/style.css?v=1.2" rel="stylesheet" />
+</head>
+<body>
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <i class="fas fa-phone me-2"></i><span id="globalPhone">+91-1234567890</span>
+          <i class="fas fa-envelope ms-3 me-2"></i><span id="globalEmail">example@churchmail.com</span>
+        </div>
+        <div class="col-md-6 text-end" id="globalSunday">
+          <i class="fas fa-clock me-2"></i>Sunday Service: 8:00 AM
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Church Name Container -->
+  <div class="church-name-container">
+    <div class="container">
+      <h1 class="church-name">St. Thomas Malankara Syrian Catholic Church</h1>
+      <p class="church-subtitle">Nalanchira, Kerala, India</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-church me-2"></i>STMSCC
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="personnel.html">Church Personnel</a></li>
+          <li class="nav-item"><a class="nav-link" href="organizations.html">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="prayer_groups.html">Prayer Groups</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 data-aos="fade-up">Photo Gallery</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Explore our collection of photos showcasing church events, celebrations, and community activities</p>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Church Photo Gallery</h2>
+        <p>Capturing moments of faith, community, and celebration</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons" data-aos="fade-up" data-aos-delay="200">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="feast">Feast</button>
+        <button class="filter-btn" data-filter="building">Church Building</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="300" id="galleryGrid">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery Section -->
+  <section class="video-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Video Gallery</h2>
+        <p>Watch videos of our church services, events, and community activities</p>
+      </div>
+
+      <div class="video-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="video-content">
+            <h5>Sunday Holy Qurbana</h5>
+            <p>Complete Sunday service recording with traditional Malankara Syrian Catholic liturgy.</p>
+            <div class="video-date">December 15, 2024</div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="video-content">
+            <h5>90th Anniversary Celebration</h5>
+            <p>Highlights from our 90th anniversary celebration with cultural programs and community lunch.</p>
+            <div class="video-date">August 15, 2024</div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="video-content">
+            <h5>Youth Ministry Program</h5>
+            <p>Youth group activities, Bible study sessions, and fellowship programs.</p>
+            <div class="video-date">November 20, 2024</div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="video-content">
+            <h5>Christmas Celebration</h5>
+            <p>Christmas carols, nativity play, and special Christmas service.</p>
+            <div class="video-date">December 25, 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5><i class="fas fa-church me-2"></i>St. Thomas MSCC</h5>
+          <p>Nalanchira, Kerala, India</p>
+          <p>A vibrant parish serving the community with faith, unity, and service for over 90 years.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="personnel.html">Church Personnel</a></li>
+            <li><a href="organizations.html">Organizations</a></li>
+            <li><a href="prayer_groups.html">Prayer Groups</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>Contact Information</h5>
+          <p><i class="fas fa-phone me-2"></i><span id="footerPhone">+91-1234567890</span></p>
+          <p><i class="fas fa-envelope me-2"></i><span id="footerEmail">example@churchmail.com</span></p>
+          <p><i class="fas fa-map-marker-alt me-2"></i><span id="footerAddress">Nalanchira, Kerala, India</span></p>
+          <p><i class="fas fa-clock me-2"></i><span id="footerSunday">Sunday Service: 8:00 AM</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 St. Thomas Malankara Syrian Catholic Church, Nalanchira. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+
+    const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8000' : '';
+
+    let lightbox;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadGalleryContent();
+    });
+
+    async function loadGalleryContent() {
+      try {
+        // 1. Fetch settings
+        const settingsRes = await fetch(`${API_BASE}/api/settings`);
+        const settings = await settingsRes.json();
+        
+        // Update Contacts in top header
+        document.getElementById('globalPhone').textContent = settings.phone || '+91-1234567890';
+        document.getElementById('globalEmail').textContent = settings.email || 'example@churchmail.com';
+        document.getElementById('globalSunday').innerHTML = `<i class="fas fa-clock me-2"></i>${settings.sunday_service || 'Sunday Service: 8:00 AM'}`;
+        
+        // Update Contacts in footer
+        document.getElementById('footerPhone').textContent = settings.phone || '+91-1234567890';
+        document.getElementById('footerEmail').textContent = settings.email || 'example@churchmail.com';
+        document.getElementById('footerAddress').textContent = settings.church_address || 'Nalanchira, Kerala, India';
+        document.getElementById('footerSunday').textContent = settings.sunday_service || 'Sunday Service: 8:00 AM';
+
+        // 2. Fetch Gallery images
+        const galleryRes = await fetch(`${API_BASE}/api/gallery`);
+        const images = await galleryRes.json();
+        
+        const galleryGrid = document.getElementById('galleryGrid');
+        galleryGrid.innerHTML = '';
+
+        if (images && images.length > 0) {
+          images.forEach(img => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'gallery-item';
+            itemDiv.setAttribute('data-category', img.category);
+            itemDiv.innerHTML = `
+              <a href="${img.image_path}" class="glightbox" data-gallery="church-gallery">
+                <img src="${img.image_path}" alt="${img.title || 'Church Celebration'}">
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+                <div class="gallery-caption">
+                  <h5>${img.title || 'Church Celebration'}</h5>
+                  <p>${img.category === 'feast' ? 'Feast & Services' : img.category.toUpperCase()}</p>
+                </div>
+              </a>
+            `;
+            galleryGrid.appendChild(itemDiv);
+          });
+        } else {
+          galleryGrid.innerHTML = '<div class="col-12 text-center text-muted"><p>No photos uploaded yet.</p></div>';
+        }
+
+        // Initialize GLightbox
+        lightbox = GLightbox({
+          selector: '.glightbox',
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: true
+        });
+
+        // Setup filter buttons click handler
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            galleryItems.forEach(item => {
+              if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+                item.style.animation = 'fadeIn 0.5s ease-in-out';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+
+            // Recreate GLightbox instance to include only visible images in the slide queue
+            if (lightbox) lightbox.destroy();
+            
+            // Wait a brief moment for transition to complete before recreating lightbox
+            setTimeout(() => {
+              lightbox = GLightbox({
+                selector: '.gallery-item[style*="display: block"] .glightbox, .gallery-item:not([style*="display: none"]) .glightbox',
+                touchNavigation: true,
+                loop: true,
+                autoplayVideos: true
+              });
+            }, 100);
+          });
+        });
+
+        // Initialize AOS
+        AOS.refresh();
+
+      } catch (err) {
+        console.error('Error loading gallery content:', err);
+      }
+    }
+
+    // Add fadeIn animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Thomas MSCC, Nalanchira - Welcome</title>
+  <meta name="description" content="St. Thomas Malankara Syrian Catholic Church, Nalanchira - A vibrant parish serving the community with faith, unity, and service for over 90 years.">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Custom Custom CSS -->
+  <link href="css/style.css?v=1.2" rel="stylesheet" />
+</head>
+<body>
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <i class="fas fa-phone me-2"></i><span id="globalPhone">+91-1234567890</span>
+          <i class="fas fa-envelope ms-3 me-2"></i><span id="globalEmail">example@churchmail.com</span>
+        </div>
+        <div class="col-md-6 text-end" id="globalSunday">
+          <i class="fas fa-clock me-2"></i>Sunday Service: 8:00 AM
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Church Name Container -->
+  <div class="church-name-container">
+    <div class="container">
+      <h1 class="church-name">St. Thomas Malankara Syrian Catholic Church</h1>
+      <p class="church-subtitle">Nalanchira, Kerala, India</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-church me-2"></i>STMSCC
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="personnel.html">Church Personnel</a></li>
+          <li class="nav-item"><a class="nav-link" href="organizations.html">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="prayer_groups.html">Prayer Groups</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div id="churchCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#churchCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#churchCarousel" data-bs-slide-to="1"></button>
+      </div>
+      <div class="carousel-inner" id="carouselInner">
+        <div class="carousel-item active">
+          <img src="images/PERUNNAL_KODIYETT.jpg" class="d-block w-100" alt="Church Celebration" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#churchCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#churchCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>About Our Parish</h2>
+        <p>A beacon of faith, unity, and service for over 90 years</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-text">
+            <h3>Our Rich Heritage</h3>
+            <p>St. Thomas Malankara Syrian Catholic Church, Nalanchira is a vibrant and spiritually active parish that has stood as a beacon of faith, unity, and service for over 90 years. Rooted in the Malankara Syrian Catholic tradition, our church embraces a strong sense of community through active participation in liturgy, prayer groups, organizations, and social outreach.</p>
+            <p>We welcome you to be a part of our faith journey and experience the warmth of our parish family. Our church is not just a place of worship, but a home where everyone is welcome to grow in faith and fellowship.</p>
+            <a href="about.html" class="btn btn-hero">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-image">
+            <img src="images/CHURCH FRONT VIEW.jpg" alt="Our Church" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Messages Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Messages from Our Leaders</h2>
+        <p>Words of guidance and inspiration from our spiritual leaders</p>
+      </div>
+      <div class="row g-4" id="messagesContainer">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Timings Section -->
+  <section class="events-section section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Service Timings</h2>
+        <p>Join us for worship throughout the week</p>
+      </div>
+      <div class="row g-3 justify-content-center" id="timingsContainer">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-section section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Events</h2>
+        <p>Stay connected with our parish activities</p>
+      </div>
+      <div class="row" id="eventsContainer">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5><i class="fas fa-church me-2"></i>St. Thomas MSCC</h5>
+          <p>Nalanchira, Kerala, India</p>
+          <p>A vibrant parish serving the community with faith, unity, and service for over 90 years.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="personnel.html">Church Personnel</a></li>
+            <li><a href="organizations.html">Organizations</a></li>
+            <li><a href="prayer_groups.html">Prayer Groups</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>Contact Information</h5>
+          <p><i class="fas fa-phone me-2"></i><span id="footerPhone">+91-1234567890</span></p>
+          <p><i class="fas fa-envelope me-2"></i><span id="footerEmail">example@churchmail.com</span></p>
+          <p><i class="fas fa-map-marker-alt me-2"></i><span id="footerAddress">Nalanchira, Kerala, India</span></p>
+          <p><i class="fas fa-clock me-2"></i><span id="footerSunday">Sunday Service: 8:00 AM</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 St. Thomas Malankara Syrian Catholic Church, Nalanchira. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Fetch and load database elements dynamically
+    document.addEventListener('DOMContentLoaded', () => {
+      loadHomepageContent();
+    });
+
+    const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8000' : '';
+
+    async function loadHomepageContent() {
+      try {
+        // 1. Fetch settings (phone, email, Sunday service, address, archbishop & vicar messages)
+        const settingsRes = await fetch(`${API_BASE}/api/settings`);
+        const settings = await settingsRes.json();
+        
+        // Update Contacts in top header
+        document.getElementById('globalPhone').textContent = settings.phone || '+91-1234567890';
+        document.getElementById('globalEmail').textContent = settings.email || 'example@churchmail.com';
+        document.getElementById('globalSunday').innerHTML = `<i class="fas fa-clock me-2"></i>${settings.sunday_service || 'Sunday Service: 8:00 AM'}`;
+        
+        // Update Contacts in footer
+        document.getElementById('footerPhone').textContent = settings.phone || '+91-1234567890';
+        document.getElementById('footerEmail').textContent = settings.email || 'example@churchmail.com';
+        document.getElementById('footerAddress').textContent = settings.church_address || 'Nalanchira, Kerala, India';
+        document.getElementById('footerSunday').textContent = settings.sunday_service || 'Sunday Service: 8:00 AM';
+
+        // Render Archbishop & Vicar messages
+        const msgContainer = document.getElementById('messagesContainer');
+        msgContainer.innerHTML = `
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card h-100">
+              <div class="leader-image-container mb-3">
+                <img src="${settings.archbishop_image || 'images/catholicos.jpg'}" alt="${settings.archbishop_name}" class="leader-image">
+              </div>
+              <h4>${settings.archbishop_title || 'Message of Head of Malankara Catholic Church'}</h4>
+              <h6 class="text-primary mb-3">${settings.archbishop_name}</h6>
+              <p class="text-muted small mb-2">${settings.archbishop_subtitle || ''}</p>
+              <p class="text-start">${settings.archbishop_message || ''}</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card h-100">
+              <div class="leader-image-container mb-3">
+                <img src="${settings.vicar_image || 'images/parish_vicar.jpg'}" alt="${settings.vicar_name}" class="leader-image">
+              </div>
+              <h4>${settings.vicar_title || 'Message of Parish Vicar'}</h4>
+              <h6 class="text-primary mb-3">${settings.vicar_name}</h6>
+              <p class="text-muted small mb-2">${settings.vicar_subtitle || ''}</p>
+              <p class="text-start">${settings.vicar_message || ''}</p>
+            </div>
+          </div>
+        `;
+
+        // 2. Fetch Carousel Banners
+        const carouselRes = await fetch(`${API_BASE}/api/carousel`);
+        const carousel = await carouselRes.json();
+        const carouselInner = document.getElementById('carouselInner');
+        
+        if (carousel && carousel.length > 0) {
+          carouselInner.innerHTML = '';
+          carousel.forEach((slide, idx) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = `carousel-item ${idx === 0 ? 'active' : ''}`;
+            slideDiv.innerHTML = `<img src="${slide.image_path}" class="d-block w-100" alt="${slide.title || 'Church Celebration'}" />`;
+            carouselInner.appendChild(slideDiv);
+          });
+        }
+
+        // 3. Fetch Service Timings/Schedules
+        const schedulesRes = await fetch(`${API_BASE}/api/schedules`);
+        const schedules = await schedulesRes.json();
+        
+        // Group schedules by day
+        const grouped = {};
+        schedules.forEach(s => {
+          if (!grouped[s.day_name]) {
+            grouped[s.day_name] = [];
+          }
+          grouped[s.day_name].push(s);
+        });
+
+        const timingsContainer = document.getElementById('timingsContainer');
+        timingsContainer.innerHTML = '';
+        
+        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        let delay = 100;
+        
+        days.forEach(day => {
+          if (grouped[day]) {
+            const col = document.createElement('div');
+            const isSunday = day === 'Sunday';
+            col.className = isSunday ? 'col-lg-4 col-md-6 mx-auto' : 'col-lg-4 col-md-6';
+            col.setAttribute('data-aos', 'fade-up');
+            col.setAttribute('data-aos-delay', delay.toString());
+            delay += 50;
+
+            let itemsHtml = '';
+            grouped[day].forEach(item => {
+              itemsHtml += `
+                <div class="service-item">
+                  <span class="service-name">${item.service_name}</span>
+                  <span class="service-time">${item.service_time}</span>
+                </div>
+              `;
+            });
+
+            col.innerHTML = `
+              <div class="service-timing-card ${isSunday ? 'sunday-special' : ''}">
+                <div class="day-header">
+                  <h5><i class="${isSunday ? 'fas fa-church' : 'fas fa-calendar-day'} me-2"></i>${day}</h5>
+                </div>
+                <div class="timing-content">
+                  ${itemsHtml}
+                </div>
+              </div>
+            `;
+            timingsContainer.appendChild(col);
+          }
+        });
+
+        // 4. Fetch Events
+        const eventsRes = await fetch(`${API_BASE}/api/events`);
+        const events = await eventsRes.json();
+        const eventsContainer = document.getElementById('eventsContainer');
+        eventsContainer.innerHTML = '';
+
+        let eventDelay = 100;
+        events.forEach(evt => {
+          const col = document.createElement('div');
+          col.className = 'col-lg-4 col-md-6 mb-4';
+          col.setAttribute('data-aos', 'fade-up');
+          col.setAttribute('data-aos-delay', eventDelay.toString());
+          eventDelay += 100;
+
+          col.innerHTML = `
+            <div class="event-card h-100">
+              <img src="${evt.image_path || 'images/CHURCH FRONT VIEW.jpg'}" alt="${evt.title}" class="event-image">
+              <div class="event-content">
+                <h5>${evt.title}</h5>
+                <p>${evt.description || ''}</p>
+              </div>
+              <div class="event-date">
+                <i class="fas fa-calendar me-2"></i>${evt.date_text || ''}
+              </div>
+            </div>
+          `;
+          eventsContainer.appendChild(col);
+        });
+
+        // Re-initialize AOS to animate dynamic items
+        AOS.refresh();
+
+      } catch (err) {
+        console.error('Error loading dynamic homepage content:', err);
+      }
+    }
+  </script>
+</body>
+</html>
